@@ -10,7 +10,7 @@ export default function ExpenseItem(props) {
     setTitle("Updated!!!");
   };
   return (
-    <>
+    <li>
       <Card className="expense-item">
         <ExpenseDate date={props.date} />
         <div className="expense-item__description">
@@ -21,6 +21,6 @@ export default function ExpenseItem(props) {
           Change title
         </button>
       </Card>
-    </>
+    </li>
   );
 }
